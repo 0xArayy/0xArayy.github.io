@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Арай Нергарян | Senior Fullstack (Web3) / Protocol Engineer</title>
+    <meta name="description" content="Senior Fullstack (Web3) / Protocol Engineer. L1 Avalanche Subnet (CX Chain), cross-chain ICM, Solidity smart contracts, DeFi/GameFi architecture." />
+    <meta name="author" content="Арай Нергарян" />
+    <link rel="canonical" href="https://0xarayy.github.io/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Арай Нергарян | Senior Web3 Engineer" />
+    <meta property="og:description" content="L1 development, smart contracts, cross-chain interoperability, end-to-end Web3 systems." />
+    <meta property="og:url" content="https://0xarayy.github.io/" />
+    <meta property="og:image" content="https://0xarayy.github.io/media/cx-chain.webp" />
+    <meta property="og:image:alt" content="Арай Нергарян — Senior Fullstack (Web3) / Protocol Engineer" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="Арай Нергарян" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Арай Нергарян | Senior Web3 Engineer" />
+    <meta name="twitter:description" content="L1, Solidity, cross-chain, DeFi/GameFi, blockchain infrastructure." />
+    <meta name="twitter:image" content="https://0xarayy.github.io/media/cx-chain.webp" />
+
+    <script id="person-schema" type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Арай Нергарян",
+      "jobTitle": "Senior Fullstack (Web3) / Protocol Engineer",
+      "url": "https://0xarayy.github.io/",
+      "sameAs": [
+        "https://t.me/array2x2",
+        "https://github.com/0xArayy"
+      ],
+      "knowsAbout": [
+        "Web3",
+        "Solidity",
+        "EVM",
+        "L1 blockchain",
+        "Protocol Engineering",
+        "Cross-chain interoperability",
+        "DeFi",
+        "GameFi",
+        "Smart Contracts"
+      ],
+      "description": "Blockchain / Web3 developer with 5+ years of experience in smart contract development, dApps, and blockchain infrastructure."
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="antialiased text-neutral-800 bg-white font-sans">
+    <a href="#about" class="skip-link" data-i18n="skip_link">Пропустить к содержимому</a>
+
+    <div class="fixed top-0 right-0 z-50 flex items-center gap-2 p-4">
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+            <button type="button" class="lang-btn is-active" data-lang-btn="ru">RU</button>
+            <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        </div>
+        <button
+            id="menu-toggle"
+            type="button"
+            class="icon-action-btn"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-overlay"
+            data-i18n-aria-label="menu_open_aria"
+        >
+            <i data-lucide="menu" class="h-5 w-5"></i>
+        </button>
+    </div>
+
+    <div
+        id="nav-overlay"
+        class="nav-overlay fixed inset-0 z-40 flex bg-white/95 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 ease-out"
+        aria-hidden="true"
+    >
+        <div class="nav-overlay__content flex h-full w-full flex-col items-center justify-center gap-1 p-8 opacity-0 transition-all duration-300 ease-out">
+            <nav class="flex flex-col items-center gap-1" aria-label="Sections">
+                <a href="#about" class="nav-link overlay-nav-link" data-i18n="nav_about">Обо мне</a>
+                <a href="#specialization" class="nav-link overlay-nav-link" data-i18n="nav_specialization">Специализация</a>
+                <a href="#skills" class="nav-link overlay-nav-link" data-i18n="nav_skills">Навыки и инструменты</a>
+                <a href="#achievements" class="nav-link overlay-nav-link" data-i18n="nav_achievements">Ключевые достижения</a>
+                <a href="#experience" class="nav-link overlay-nav-link" data-i18n="nav_experience">Опыт работы</a>
+                <a href="#education" class="nav-link overlay-nav-link" data-i18n="nav_education">Образование</a>
+                <a href="#work-format" class="nav-link overlay-nav-link" data-i18n="work_title">Формат работы</a>
+                <a href="#contact" class="nav-link overlay-nav-link" data-i18n="nav_contact">Контакты</a>
+            </nav>
+            <button
+                id="menu-close"
+                type="button"
+                class="icon-action-btn icon-action-btn--muted mt-8"
+                aria-label="Close menu"
+                data-i18n-aria-label="menu_close_aria"
+            >
+                <i data-lucide="x" class="h-5 w-5"></i>
+            </button>
+        </div>
+    </div>
+
+    <a
+        href="https://t.me/array2x2"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="floating-telegram-cta fixed bottom-6 right-6 z-30 flex items-center gap-2 rounded-full bg-neutral-900 px-5 py-3 text-sm font-medium text-white shadow-lg transition hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-500 focus:ring-offset-2"
+        aria-label="Contact in Telegram"
+    >
+        <i data-lucide="message-circle" class="h-4 w-4 shrink-0"></i>
+        <span data-i18n="cta_contact">Написать в Telegram</span>
+    </a>
+
+    <div class="min-h-screen">
+        <div class="mx-auto max-w-3xl px-6 py-16 sm:px-8">
+            <header class="text-center">
+                <h1 class="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl" data-i18n="hero_name">Арай Нергарян</h1>
+                <p class="mt-2 text-lg text-neutral-600" data-i18n="hero_role">Senior Fullstack (Web3) / Protocol Engineer</p>
+                <p class="mt-4 text-neutral-600 leading-relaxed max-w-2xl mx-auto" data-i18n="hero_value">
+                    Blockchain / Web3 разработчик с 5+ годами опыта: проектирую и запускаю end-to-end Web3 продукты от UI и backend до L1 инфраструктуры и смарт-контрактов.
+                </p>
+                <p class="mt-4 text-sm text-neutral-500">
+                    <span data-i18n="hero_location_label">Локация:</span>
+                    <span data-i18n="hero_location_value">Москва, Россия · Remote</span>
+                    ·
+                    <a href="https://t.me/array2x2" class="text-neutral-700 underline decoration-neutral-300 underline-offset-2 hover:decoration-neutral-500">Telegram</a>
+                    ·
+                    <a href="https://github.com/0xArayy" target="_blank" rel="noopener noreferrer" class="text-neutral-700 underline decoration-neutral-300 underline-offset-2 hover:decoration-neutral-500">GitHub</a>
+                </p>
+            </header>
+
+            <main class="mt-16 space-y-16 resume-content">
+                <section id="about" class="scroll-mt-24">
+                    <h2 class="section-title" data-i18n="about_title">Обо мне</h2>
+                    <p class="content-text mt-4" data-i18n="about_p1"></p>
+                    <p class="content-text mt-3" data-i18n="about_p2"></p>
+                </section>
+
+                <section id="specialization" class="scroll-mt-24">
+                    <h2 class="section-title" data-i18n="spec_title">Ключевая специализация</h2>
+                    <ul class="content-list mt-4 space-y-2 list-disc list-inside">
+                        <li data-i18n="spec_1"></li>
+                        <li data-i18n="spec_2"></li>
+                        <li data-i18n="spec_3"></li>
+                        <li data-i18n="spec_4"></li>
+                        <li data-i18n="spec_5"></li>
+                        <li data-i18n="spec_6"></li>
+                        <li data-i18n="spec_7"></li>
+                        <li data-i18n="spec_8"></li>
+                    </ul>
+                </section>
+
+                <section id="skills" class="scroll-mt-24">
+                    <h2 class="section-title" data-i18n="skills_title">Навыки и инструменты</h2>
+                    <div class="mt-6 space-y-4">
+                        <article class="content-card">
+                            <h3 class="font-semibold text-neutral-900" data-i18n="skills_block1_title"></h3>
+                            <p class="content-text mt-2 text-sm" data-i18n="skills_block1_list"></p>
+                        </article>
+                        <article class="content-card">
+                            <h3 class="font-semibold text-neutral-900" data-i18n="skills_block2_title"></h3>
+                            <p class="content-text mt-2 text-sm" data-i18n="skills_block2_list"></p>
+                        </article>
+                        <article class="content-card">
+                            <h3 class="font-semibold text-neutral-900" data-i18n="skills_block3_title"></h3>
+                            <p class="content-text mt-2 text-sm" data-i18n="skills_block3_list"></p>
+                        </article>
+                        <article class="content-card">
+                            <h3 class="font-semibold text-neutral-900" data-i18n="skills_block4_title"></h3>
+                            <p class="content-text mt-2 text-sm" data-i18n="skills_block4_list"></p>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="achievements" class="scroll-mt-24">
+                    <h2 class="section-title" data-i18n="achievements_title">Ключевые достижения</h2>
+                    <ul class="content-list mt-4 space-y-3 list-disc list-inside">
+                        <li data-i18n="ach_1"></li>
+                        <li data-i18n="ach_2"></li>
+                        <li data-i18n="ach_3"></li>
+                        <li data-i18n="ach_4"></li>
+                        <li data-i18n="ach_5"></li>
+                        <li data-i18n="ach_6"></li>
+                    </ul>
+                </section>
+
+                <section id="experience" class="scroll-mt-24">
+                    <h2 class="section-title" data-i18n="exp_title">Опыт работы</h2>
+                    <div class="mt-6 space-y-6 border-t border-neutral-200 pt-6">
+                        <article class="timeline-item">
+                            <div class="flex flex-wrap items-baseline justify-between gap-2">
+                                <h3 class="font-semibold text-neutral-900">AltitudeDP</h3>
+                                <p class="text-sm text-neutral-500" data-i18n="exp_1_period"></p>
+                            </div>
+                            <img src="media/cx-chain.webp" alt="CX Chain project preview" class="mt-3 w-full rounded-lg border border-neutral-200 object-cover" />
+                            <p class="mt-1 text-sm text-neutral-700" data-i18n="exp_1_role"></p>
+                            <p class="content-text mt-2 text-sm" data-i18n="exp_1_summary"></p>
+                            <ul class="content-list mt-3 space-y-1 list-disc list-inside text-sm">
+                                <li data-i18n="exp_1_b1"></li>
+                                <li data-i18n="exp_1_b2"></li>
+                                <li data-i18n="exp_1_b3"></li>
+                                <li data-i18n="exp_1_b4"></li>
+                            </ul>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="flex flex-wrap items-baseline justify-between gap-2">
+                                <h3 class="font-semibold text-neutral-900">Freelance</h3>
+                                <p class="text-sm text-neutral-500" data-i18n="exp_2_period"></p>
+                            </div>
+                            <p class="mt-1 text-sm text-neutral-700" data-i18n="exp_2_role"></p>
+                            <p class="content-text mt-2 text-sm" data-i18n="exp_2_summary"></p>
+                            <ul class="content-list mt-3 space-y-1 list-disc list-inside text-sm">
+                                <li data-i18n="exp_2_b1"></li>
+                                <li data-i18n="exp_2_b2"></li>
+                                <li data-i18n="exp_2_b3"></li>
+                            </ul>
+                        </article>
+
+                        <article class="timeline-item">
+                            <div class="flex flex-wrap items-baseline justify-between gap-2">
+                                <h3 class="font-semibold text-neutral-900">radixsystem</h3>
+                                <p class="text-sm text-neutral-500" data-i18n="exp_3_period"></p>
+                            </div>
+                            <img src="media/radix.webp" alt="Radixsystem project preview" class="mt-3 w-full rounded-lg border border-neutral-200 object-cover" />
+                            <p class="mt-1 text-sm text-neutral-700" data-i18n="exp_3_role"></p>
+                            <p class="content-text mt-2 text-sm" data-i18n="exp_3_summary"></p>
+                            <ul class="content-list mt-3 space-y-1 list-disc list-inside text-sm">
+                                <li data-i18n="exp_3_b1"></li>
+                                <li data-i18n="exp_3_b2"></li>
+                                <li data-i18n="exp_3_b3"></li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+
+                <section id="education" class="scroll-mt-24">
+                    <h2 class="section-title" data-i18n="edu_title">Образование</h2>
+                    <article class="content-card mt-4">
+                        <h3 class="font-semibold text-neutral-900" data-i18n="edu_uni"></h3>
+                        <p class="content-text mt-1 text-sm" data-i18n="edu_degree"></p>
+                        <p class="mt-2 text-sm text-neutral-500" data-i18n="edu_langs"></p>
+                    </article>
+                </section>
+
+                <section id="work-format" class="scroll-mt-24">
+                    <h2 class="section-title" data-i18n="work_title">Формат работы</h2>
+                    <p class="content-text mt-4" data-i18n="work_desc"></p>
+                </section>
+
+                <section id="contact" class="scroll-mt-24">
+                    <h2 class="section-title" data-i18n="contact_title">Контакты</h2>
+                    <p class="content-text mt-4" data-i18n="contact_desc"></p>
+                    <div class="mt-4 flex flex-wrap gap-3">
+                        <a href="https://t.me/array2x2" class="action-chip">Telegram</a>
+                        <a href="https://github.com/0xArayy" target="_blank" rel="noopener noreferrer" class="action-chip">GitHub</a>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script>
+        lucide.createIcons();
+
+        (function () {
+            var menuToggle = document.getElementById('menu-toggle');
+            var menuClose = document.getElementById('menu-close');
+            var overlay = document.getElementById('nav-overlay');
+            var navLinks = overlay.querySelectorAll('.nav-link');
+            var langButtons = document.querySelectorAll('[data-lang-btn]');
+            var langSwitch = document.querySelector('.lang-switch');
+            var i18nNodes = document.querySelectorAll('[data-i18n]');
+            var i18nAriaNodes = document.querySelectorAll('[data-i18n-aria-label]');
+            var html = document.documentElement;
+            var schemaNode = document.getElementById('person-schema');
+
+            var translations = {
+                ru: {
+                    hero_name: 'Арай Нергарян',
+                    page_title: 'Арай Нергарян | Senior Fullstack (Web3) / Protocol Engineer',
+                    page_description: 'Senior Fullstack (Web3) / Protocol Engineer. L1 Avalanche Subnet (CX Chain), cross-chain ICM, Solidity smart contracts, DeFi/GameFi architecture.',
+                    og_title: 'Арай Нергарян | Senior Web3 Engineer',
+                    og_description: 'L1 development, smart contracts, cross-chain interoperability, end-to-end Web3 systems.',
+                    skip_link: 'Пропустить к содержимому',
+                    menu_open_aria: 'Открыть меню',
+                    menu_close_aria: 'Закрыть меню',
+                    nav_about: 'Обо мне',
+                    nav_specialization: 'Специализация',
+                    nav_skills: 'Навыки и инструменты',
+                    nav_achievements: 'Ключевые достижения',
+                    nav_experience: 'Опыт работы',
+                    nav_education: 'Образование',
+                    nav_contact: 'Контакты',
+                    cta_contact: 'Написать в Telegram',
+                    hero_role: 'Senior Fullstack (Web3) / Protocol Engineer',
+                    hero_value: 'Senior Web3 разработчик с 5+ годами опыта в создании end-to-end блокчейн-систем: от frontend и backend до L1-инфраструктуры и смарт-контрактов.',
+                    hero_location_label: 'Формат:',
+                    hero_location_value: 'Remote',
+                    about_title: 'О себе',
+                    about_p1: 'Специализируюсь на разработке протоколов, cross-chain решениях и account abstraction (ERC-4337). Имею практический опыт запуска production Web3-продуктов, включая L1 сети, DeFi/GameFi механики и масштабируемые on-chain/off-chain архитектуры.',
+                    about_p2: 'Активно использую AI-assisted подход (Cursor, LLM pipelines) для ускорения разработки, анализа сложных систем и прототипирования.',
+                    spec_title: 'Ключевая экспертиза',
+                    spec_1: 'L1 / Protocol Engineering (Avalanche Subnets, validator/node инфраструктура)',
+                    spec_2: 'Смарт-контракты (Solidity, Vyper, FunC, Tact)',
+                    spec_3: 'Account Abstraction (ERC-4337, paymaster)',
+                    spec_4: 'Cross-chain взаимодействие (ICM, multi-chain архитектуры)',
+                    spec_5: 'DeFi / GameFi (staking, токеномика, incentive-модели)',
+                    spec_6: 'Fullstack Web3 разработка (frontend + backend + blockchain)',
+                    spec_7: 'Безопасность, тестирование и gas optimization',
+                    spec_8: 'Проектирование production-grade on-chain/off-chain архитектур',
+                    skills_title: 'Навыки и инструменты',
+                    skills_block1_title: 'Blockchain / Web3',
+                    skills_block1_list: 'Solidity, Vyper, FunC, Tact, Hardhat, Foundry, ethers.js, OpenZeppelin, Chainlink',
+                    skills_block2_title: 'Backend',
+                    skills_block2_list: 'TypeScript, Node.js, NestJS, Python, FastAPI, REST, GraphQL',
+                    skills_block3_title: 'Frontend',
+                    skills_block3_list: 'React, Next.js, Web3-интеграции (wallets, подписи)',
+                    skills_block4_title: 'Инфраструктура и данные / AI',
+                    skills_block4_list: 'PostgreSQL, Docker, Linux, LLM-assisted разработка, Cursor',
+                    achievements_title: 'Ключевые достижения',
+                    ach_1: 'Запуск L1 блокчейна (Avalanche Subnet) с полной инфраструктурой.',
+                    ach_2: 'Реализация cross-chain архитектуры для взаимодействия между сетями.',
+                    ach_3: 'Проектирование токеномики (staking, рефералы, роли).',
+                    ach_4: 'Внедрение ERC-4337 (smart wallets + paymaster).',
+                    ach_5: 'Построение аналитического слоя Web3-продукта (поведение пользователей, метрики).',
+                    ach_6: 'Разработка production-grade on-chain/off-chain архитектур для Web3 систем.',
+                    exp_title: 'Опыт работы',
+                    exp_1_period: 'Апрель 2025 - настоящее время',
+                    exp_1_role: 'Fullstack (Web3) Engineer',
+                    exp_1_summary: 'Спроектировал и масштабировал L1 экосистему на базе Avalanche Subnet (CX Chain).',
+                    exp_1_b1: 'Спроектировал и развернул L1 блокчейн, включая настройку валидаторов и node-инфраструктуры.',
+                    exp_1_b2: 'Разработал и провел аудит смарт-контрактов для GameFi механик (ставки, выплаты, управление состоянием).',
+                    exp_1_b3: 'Интегрировал Chainlink VRF для обеспечения проверяемой on-chain случайности.',
+                    exp_1_b4: 'Реализовал account abstraction (ERC-4337), smart wallet, paymaster backend и cross-chain через ICM.',
+                    exp_2_period: 'Январь 2025 - Апрель 2025',
+                    exp_2_role: 'Blockchain / Data Analyst',
+                    exp_2_summary: 'Аналитика продуктовых и бизнес-метрик для data-driven решений.',
+                    exp_2_b1: 'Разработал аналитические дашборды для retention, конверсии и доходности.',
+                    exp_2_b2: 'Оптимизировал сложные SQL-запросы для больших объемов данных и производительности отчетности.',
+                    exp_2_b3: 'Разработал NFT-платформы, Telegram Web3 MiniApp и GameFi продукт с DeFi механиками.',
+                    exp_3_period: 'Май 2022 - Январь 2025',
+                    exp_3_role: 'Blockchain / Fullstack Engineer',
+                    exp_3_summary: 'Разрабатывал корпоративные и продуктовые Web3-решения.',
+                    exp_3_b1: 'Развертывал и поддерживал приватные blockchain-сети (Hyperledger, IOTA), включая защиту инфраструктуры.',
+                    exp_3_b2: 'Проектировал и интегрировал токен-контракты с backend-сервисами.',
+                    exp_3_b3: 'Автоматизировал процессы отчетности и применял AI-инструменты (GPT, LangChain).',
+                    edu_title: 'Образование',
+                    edu_uni: 'МЭИ (НИУ)',
+                    edu_degree: 'Бакалавр, Информатика и вычислительная техника (2025)',
+                    edu_langs: 'Языки: Русский (родной), Английский (B2), Армянский',
+                    work_title: 'Формат работы',
+                    work_desc: 'Remote | Full-time | Part-time',
+                    contact_title: 'Контакты',
+                    contact_desc: 'Для связи по Web3/L1/Protocol задачам используйте Telegram. Открыт к обсуждению продуктовой и инженерной роли.',
+                },
+                en: {
+                    hero_name: 'Aray Nergaryan',
+                    page_title: 'Aray Nergaryan | Senior Fullstack (Web3) / Protocol Engineer',
+                    page_description: 'Senior Fullstack (Web3) / Protocol Engineer. L1 Avalanche Subnet (CX Chain), cross-chain ICM, Solidity smart contracts, DeFi/GameFi architecture.',
+                    og_title: 'Aray Nergaryan | Senior Web3 Engineer',
+                    og_description: 'L1 development, smart contracts, cross-chain interoperability, end-to-end Web3 systems.',
+                    skip_link: 'Skip to content',
+                    menu_open_aria: 'Open menu',
+                    menu_close_aria: 'Close menu',
+                    nav_about: 'About',
+                    nav_specialization: 'Specialization',
+                    nav_skills: 'Skills & Tools',
+                    nav_achievements: 'Key Achievements',
+                    nav_experience: 'Experience',
+                    nav_education: 'Education',
+                    nav_contact: 'Contact',
+                    cta_contact: 'Message on Telegram',
+                    hero_role: 'Senior Fullstack (Web3) / Protocol Engineer',
+                    hero_value: 'Senior Web3 Engineer with 5+ years of experience building end-to-end blockchain systems, from frontend and backend services to L1 infrastructure and smart contracts.',
+                    hero_location_label: 'Format:',
+                    hero_location_value: 'Remote',
+                    about_title: 'Summary',
+                    about_p1: 'Specialized in protocol-level development, cross-chain systems, and account abstraction (ERC-4337). Proven track record of launching production-grade Web3 products, including L1 networks, DeFi/GameFi mechanics, and scalable on-chain/off-chain architectures.',
+                    about_p2: 'I actively leverage AI-assisted development (Cursor, LLM pipelines) to accelerate delivery, analyze complex codebases, and prototype high-performance systems.',
+                    spec_title: 'Core Specialization',
+                    spec_1: 'L1 / Protocol engineering (Avalanche Subnets, validator/node infrastructure)',
+                    spec_2: 'Smart contracts (Solidity, Vyper, FunC, Tact)',
+                    spec_3: 'Account abstraction (ERC-4337, paymasters)',
+                    spec_4: 'Cross-chain interoperability (ICM, multi-chain architectures)',
+                    spec_5: 'DeFi / GameFi systems (staking, tokenomics, incentives)',
+                    spec_6: 'Web3 fullstack development (React, Node.js, APIs, blockchain integration)',
+                    spec_7: 'Security, testing, and smart contract hardening',
+                    spec_8: 'Gas optimization and transaction-level performance tuning',
+                    skills_title: 'Skills & Tools',
+                    skills_block1_title: 'Blockchain / Web3',
+                    skills_block1_list: 'Solidity, Vyper, FunC, Tact, Hardhat, Foundry, ethers.js, OpenZeppelin, Chainlink',
+                    skills_block2_title: 'Backend',
+                    skills_block2_list: 'TypeScript, Node.js, NestJS, Python, FastAPI, REST, GraphQL',
+                    skills_block3_title: 'Frontend',
+                    skills_block3_list: 'React, Next.js, Web3 wallet integrations',
+                    skills_block4_title: 'Data / Infra / AI',
+                    skills_block4_list: 'PostgreSQL, Docker, Linux, LLM-assisted development workflows, Cursor',
+                    achievements_title: 'Key Project Highlights',
+                    ach_1: 'Launched a production L1 blockchain (Avalanche Subnet) with full infrastructure stack.',
+                    ach_2: 'Built cross-chain architecture enabling interoperability between networks.',
+                    ach_3: 'Designed tokenomics systems including staking, referral systems, and role-based mechanics.',
+                    ach_4: 'Implemented ERC-4337 smart wallets and paymaster infrastructure.',
+                    ach_5: 'Developed analytics layer for Web3 products (user behavior, retention, revenue insights).',
+                    ach_6: 'Delivered production-grade on-chain/off-chain architectures across Web3 products.',
+                    exp_title: 'Experience',
+                    exp_1_period: 'Apr 2025 - Present',
+                    exp_1_role: 'Fullstack (Web3) Engineer',
+                    exp_1_summary: 'Built and scaled an Avalanche Subnet based L1 ecosystem (CX Chain).',
+                    exp_1_b1: 'Designed and deployed an L1 blockchain, including validator setup, node infrastructure, and network configuration.',
+                    exp_1_b2: 'Built and audited GameFi smart contracts: betting logic, payouts, and on-chain state management.',
+                    exp_1_b3: 'Integrated Chainlink VRF for provably fair randomness and improved reliability through security fixes.',
+                    exp_1_b4: 'Implemented ERC-4337 account abstraction, paymaster backend, and Avalanche ICM interoperability.',
+                    exp_2_period: 'Jan 2025 - Apr 2025',
+                    exp_2_role: 'Blockchain / Data Analyst',
+                    exp_2_summary: 'Focused on product and business analytics for blockchain-adjacent workloads.',
+                    exp_2_b1: 'Built analytical dashboards for retention, conversion, and revenue.',
+                    exp_2_b2: 'Optimized complex SQL queries for large-scale datasets and reporting performance.',
+                    exp_2_b3: 'Built NFT platforms, Telegram Web3 MiniApps, and a GameFi product with DeFi mechanics.',
+                    exp_3_period: 'May 2022 - Jan 2025',
+                    exp_3_role: 'Blockchain / Fullstack Engineer',
+                    exp_3_summary: 'Delivered enterprise and product-grade Web3 solutions across multiple stacks.',
+                    exp_3_b1: 'Deployed and maintained private blockchain networks (Hyperledger, IOTA) with secure node operations.',
+                    exp_3_b2: 'Designed and integrated token smart contracts with backend services.',
+                    exp_3_b3: 'Automated data/reporting workflows and applied AI tools (GPT, LangChain).',
+                    edu_title: 'Education',
+                    edu_uni: 'National Research University MPEI',
+                    edu_degree: 'BSc in Computer Science (2025)',
+                    edu_langs: 'Languages: Russian (native), English (B2), Armenian (native)',
+                    work_title: 'Work Format',
+                    work_desc: 'Remote | Full-time | Part-time',
+                    contact_title: 'Contact',
+                    contact_desc: 'For Web3/L1/Protocol opportunities, message me on Telegram. Open to product-focused engineering roles.',
+                }
+            };
+
+            function updateMeta(language) {
+                var dict = translations[language];
+                document.title = dict.page_title;
+
+                var descriptionMeta = document.querySelector('meta[name="description"]');
+                var ogTitleMeta = document.querySelector('meta[property="og:title"]');
+                var ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
+                var twitterTitleMeta = document.querySelector('meta[name="twitter:title"]');
+                var twitterDescriptionMeta = document.querySelector('meta[name="twitter:description"]');
+                var ogLocaleMeta = document.querySelector('meta[property="og:locale"]');
+
+                if (descriptionMeta) descriptionMeta.setAttribute('content', dict.page_description);
+                if (ogTitleMeta) ogTitleMeta.setAttribute('content', dict.og_title);
+                if (ogDescriptionMeta) ogDescriptionMeta.setAttribute('content', dict.og_description);
+                if (twitterTitleMeta) twitterTitleMeta.setAttribute('content', dict.og_title);
+                if (twitterDescriptionMeta) twitterDescriptionMeta.setAttribute('content', dict.og_description);
+                if (ogLocaleMeta) ogLocaleMeta.setAttribute('content', language === 'ru' ? 'ru_RU' : 'en_US');
+            }
+
+            function updateSchema(language) {
+                if (!schemaNode) return;
+                var schema = {
+                    '@context': 'https://schema.org',
+                    '@type': 'Person',
+                    name: language === 'ru' ? 'Арай Нергарян' : 'Aray Nergaryan',
+                    jobTitle: translations[language].hero_role,
+                    url: 'https://0xarayy.github.io/',
+                    sameAs: ['https://t.me/array2x2', 'https://github.com/0xArayy'],
+                    knowsAbout: ['Web3', 'Solidity', 'EVM', 'L1 blockchain', 'Protocol Engineering', 'Cross-chain interoperability', 'DeFi', 'GameFi', 'Smart Contracts'],
+                    description: translations[language].hero_value
+                };
+                schemaNode.textContent = JSON.stringify(schema, null, 2);
+            }
+
+            function setLanguage(language) {
+                var dict = translations[language] || translations.ru;
+                html.setAttribute('lang', language);
+
+                i18nNodes.forEach(function (node) {
+                    var key = node.getAttribute('data-i18n');
+                    if (dict[key]) node.textContent = dict[key];
+                });
+
+                i18nAriaNodes.forEach(function (node) {
+                    var key = node.getAttribute('data-i18n-aria-label');
+                    if (dict[key]) node.setAttribute('aria-label', dict[key]);
+                });
+
+                langButtons.forEach(function (button) {
+                    var active = button.getAttribute('data-lang-btn') === language;
+                    button.classList.toggle('is-active', active);
+                });
+                if (langSwitch) langSwitch.classList.toggle('is-en', language === 'en');
+
+                updateMeta(language);
+                updateSchema(language);
+                localStorage.setItem('preferred-language', language);
+            }
+
+            function openMenu() {
+                overlay.setAttribute('aria-hidden', 'false');
+                menuToggle.setAttribute('aria-expanded', 'true');
+                document.body.style.overflow = 'hidden';
+                overlay.classList.add('nav-overlay--open');
+            }
+
+            function closeMenu() {
+                overlay.classList.remove('nav-overlay--open');
+                overlay.setAttribute('aria-hidden', 'true');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                overlay.addEventListener('transitionend', function onEnd() {
+                    overlay.removeEventListener('transitionend', onEnd);
+                    document.body.style.overflow = '';
+                }, { once: true });
+            }
+
+            function toggleMenu() {
+                if (overlay.classList.contains('nav-overlay--open')) {
+                    closeMenu();
+                } else {
+                    openMenu();
+                }
+            }
+
+            menuToggle.addEventListener('click', toggleMenu);
+            menuClose.addEventListener('click', closeMenu);
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    var href = this.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        var target = document.querySelector(href);
+                        if (target) {
+                            target.scrollIntoView({ block: 'start' });
+                        }
+                        closeMenu();
+                    }
+                });
+            });
+
+            overlay.addEventListener('click', function (e) {
+                if (e.target === overlay) closeMenu();
+            });
+
+            langButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    var nextLang = this.getAttribute('data-lang-btn');
+                    setLanguage(nextLang);
+                });
+            });
+
+            var savedLang = localStorage.getItem('preferred-language');
+            var initialLang = savedLang === 'en' ? 'en' : 'ru';
+            setLanguage(initialLang);
+        })();
+    </script>
+</body>
+</html>
